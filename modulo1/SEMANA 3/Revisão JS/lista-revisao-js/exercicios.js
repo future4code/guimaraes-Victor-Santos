@@ -63,7 +63,14 @@ return arrayPares
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+    let arrayPares = []
+
+    for (const i of array){
+    if (i % 2 === 0)
+    arrayPares.push(i*i)
+
+    } return arrayPares
+
     
 } 
 
