@@ -88,6 +88,30 @@ function retornaMaiorNumero(array) {
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {
 
+    let numeroMaior = undefined;
+    let numeroMenor = undefined;
+    let maiorDivisivelPorMenor = undefined;
+    let diferenca = undefined;
+    //{"maiorNumero":30,"maiorDivisivelPorMenor":true,"diferenca":15}
+
+    if (num1 > num2) {
+        numeroMaior = num1;
+        numeroMenor = num2
+    } else {
+        numeroMaior = num2;
+        numeroMenor = num1
+    }
+
+    if (numeroMaior % numeroMenor === 0){
+        maiorDivisivelPorMenor = true;
+    } else {
+        maiorDivisivelPorMenor = false;
+    }
+
+    diferenca = numeroMaior - numeroMenor
+
+    return {"maiorNumero":numeroMaior,"maiorDivisivelPorMenor":maiorDivisivelPorMenor,"diferenca":diferenca}
+
 
 
 }
