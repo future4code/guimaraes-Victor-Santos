@@ -26,6 +26,35 @@ function retornaArrayOrdenado(array) {
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
   
+    return array.length
+
+}
+
+// EXERCÍCIO 02
+function retornaArrayInvertido(array) {
+  
+    return array.reverse()
+}
+
+// EXERCÍCIO 03
+function retornaArrayOrdenado(array) {
+  
+return array.sort(function (a , b) {return a-b});
+
+}
+
+// EXERCÍCIO 04
+function retornaNumerosPares(array) {
+  
+let arrayPares = []
+
+for (const i of array){
+
+if (i % 2 === 0)
+arrayPares.push(i)
+
+}
+return arrayPares
 
 
 }
